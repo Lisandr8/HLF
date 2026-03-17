@@ -7,9 +7,9 @@
 }
 
 body {
-  @apply font-sans bg-stone-50 text-stone-900;
+  @apply font-sans bg-stone-950 text-stone-100;
 }
 
 h1, h2, h3, h4 {
-  @apply font-serif;
+  @apply font-serif text-stone-50;
 }

@@ -35,17 +35,17 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-24 bg-stone-50">
+    <section id="servicios" className="py-24 bg-stone-900/50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Excelencia Jurídica a su Servicio</h2>
-            <p className="text-stone-600 text-lg">
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-stone-50">Excelencia Jurídica a su Servicio</h2>
+            <p className="text-stone-400 text-lg">
               Ofrecemos soluciones legales personalizadas con un equipo de especialistas dedicados a proteger sus intereses y asegurar el cumplimiento normativo.
             </p>
           </div>
           <div className="hidden md:block">
-            <span className="text-stone-400 font-mono text-sm uppercase tracking-widest">Nuestras Áreas</span>
+            <span className="text-stone-500 font-mono text-sm uppercase tracking-widest">Nuestras Áreas</span>
           </div>
         </div>
 
@@ -53,13 +53,13 @@ export default function Services() {
           {SERVICES.map((service, idx) => (
             <div 
               key={idx}
-              className="bg-white p-8 rounded-2xl border border-stone-200 hover:border-stone-400 transition-all group"
+              className="bg-stone-900 p-8 rounded-2xl border border-stone-800 hover:border-stone-600 transition-all group"
             >
-              <div className="w-12 h-12 bg-stone-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-stone-900 group-hover:text-white transition-colors">
+              <div className="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-stone-100 group-hover:text-stone-900 transition-colors text-stone-300">
                 <service.icon className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-serif mb-3">{service.title}</h3>
-              <p className="text-stone-500 leading-relaxed">
+              <h3 className="text-xl font-serif mb-3 text-stone-100">{service.title}</h3>
+              <p className="text-stone-400 leading-relaxed">
                 {service.description}
               </p>
             </div>
